@@ -1,0 +1,42 @@
+Marge: 16 47 16
+
+Idée:
+
+-Lightbox au clic sur l'image
+
+-Animation quand un article est ajouté au panier
+Au clic, ouvrir une page ou on propose de poursuivre les achats
+Ou de voir le panier. Proposer aussi des produits lié à celui choisi et afficher les px au hover.
+Ne pas oublier de rementionner le produit et le prix (voir le site esprit pour la mise en forme)
+
+Page d'acceuil:
+-Un encart discret avec le nombre de nouveauté (liens)
+Au clic sur ce lien: on tombre sur les 12 Articles dernièrements ajoutés...
+
+
+Espace membre:
+
+-Résumé des derniers articles consultés
+
+
+
+Fiche produit:
+
+-Produit lié en dessous du produit sélectionné
+-Produits que les clients ont acheté en //
+-les évaluations par les clients
+-Mini Slider de différentes prises de vue du produit
+
+
+
+Page de panier
+
+-Donner un choix de quantité du produit et une mise à jour
+automatique de px du produit
+
+-
+
+
+Page de validation du panier
+
+Joindre un commentaire / une remarque avant de valider
