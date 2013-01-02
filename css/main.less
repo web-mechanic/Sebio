@@ -215,7 +215,7 @@ body {
 }
 
 .globalwrap{
-  width:1024px;
+  width:1038px;
   margin: 0 auto;
 }
 
@@ -683,6 +683,13 @@ table {
 
  @green: #669933;
  @orange: #f25334;
+ .three-colscont(){
+width: 22.9em;
+display: inline-block;
+margin-right: 1.875em;
+list-style-type: none;
+vertical-align: top;
+}
 
    /* ==========================================================================
     Général
@@ -691,6 +698,10 @@ table {
 .hiddenTitle{
   display: none;
 }
+
+   /* ==========================================================================
+    Header
+   ========================================================================== */
 
 .logo{
   width:50%;
@@ -729,40 +740,97 @@ img{
           
 }
 
+
+   /* ==========================================================================
+    Menu
+   ========================================================================== */
   
 .listTitle{
   display:inline-block;
   text-align: center;
-    a{
-      color: white;
-      text-decoration: none;
-      margin: 0;
-      font-size: 1.3em;
-      height: 100%;
-      padding: 0.7em 1.9em 0.7em 1.95em;
+  margin-top: 0.7em;
+
+
+      .listInt{
+        color: white;
+        text-decoration: none;
+        margin: 0;
+        font-size: 1.3em;
+        height: 100%;
+        padding: 0.7em 1.9em 0.7em 1.95em;
 }
 }
 
-.listTitle :hover{
-  border-radius: 10px;
-  background-color: #82cc39;
+.listTitle a:hover{
+
+      border-radius: 10px;
+      background-color: #82CC39;
+      padding-top: 0.61em;
+}
+
+.listTitle a:last-child:hover{
+  margin-right: 5em;
 }
 
 
-.listTitle > ul{
-  display: none;
+
+.listTitle:hover{ 
+
+  .dropDwn{
+    transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s; /* Firefox 4 */
+    -webkit-transition-delay: 0.3s; /* Safari and Chrome */
+    -o-transition-delay: 0.3s; /* Opera */
+    visibility: visible;
+    color:black;
+    background-color: white;
+    width: 1037px;
+    margin-top: 0.8em;
+    border: 1px @green;
+    padding-top: 1em;
+  }
 }
+
+.listSubTitle{
+display: inline-block;
+width: 15.1em;
+vertical-align: top;
+font-size: 0.8em;
+}
+
 
 
 
 .mainNav{
   border-radius: 10px;
   background-color: @green;
+  height:3.4em;
 }
 /* .mainNav a{
   padding: 0.75em 1.5em 0.75em 1.2em; */
 
+.dropDwn{
+  position: absolute;
+  visibility: hidden;
+  right: 9.7em;
 
+   li{
+    text-align: left;
+
+    a{
+      color: black ; 
+      margin-left: 0.4em;
+
+      &:hover{
+        color:@green;
+      }
+    }
+  }
+}
+
+   /* ==========================================================================
+    Content accueil
+   ========================================================================== */
 
 .contentwrap{
   margin: 1em 0 0 0;
