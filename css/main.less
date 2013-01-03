@@ -28,9 +28,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-body {
-  line-height: 1;
-}
+
 ol, ul {
   list-style: none;
 }
@@ -64,7 +62,8 @@ body {
     font-size: 16px;
     line-height: 1.4;
     background-image: url('../img/bcg.png');
-    background-repeat: repeat
+    background-repeat: repeat;
+    font-family: 'Droid Sans', sans-serif;
 }
 
 ::-moz-selection {
@@ -208,14 +207,9 @@ textarea {
  * Addresses margins handled incorrectly in IE 6/7.
  */
 
-body {  
-    
-    
-
-}
 
 .globalwrap{
-  width:1038px;
+  width:1070px;
   margin: 0 auto;
 }
 
@@ -263,70 +257,23 @@ a{
  * and Chrome.
  */
 
- @font-face {
-    font-family: 'AmaranthRegular';
-    src: url('../font/Amaranth-webfont.eot');
-    src: url('../font/Amaranth-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Amaranth-webfont.woff') format('woff'),
-         url('../font/Amaranth-webfont.ttf') format('truetype'),
-         url('../font/Amaranth-webfont.svg#AmaranthRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'AmaranthItalic';
-    src: url('../font/Amaranth-Italic-webfont.eot');
-    src: url('../font/Amaranth-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Amaranth-Italic-webfont.woff') format('woff'),
-         url('../font/Amaranth-Italic-webfont.ttf') format('truetype'),
-         url('../font/Amaranth-Italic-webfont.svg#AmaranthItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'AmaranthBold';
-    src: url('../font/Amaranth-Bold-webfont.eot');
-    src: url('../font/Amaranth-Bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Amaranth-Bold-webfont.woff') format('woff'),
-         url('../font/Amaranth-Bold-webfont.ttf') format('truetype'),
-         url('../font/Amaranth-Bold-webfont.svg#AmaranthBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'AmaranthBoldItalic';
-    src: url('../font/Amaranth-BoldItalic-webfont.eot');
-    src: url('../font/Amaranth-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/Amaranth-BoldItalic-webfont.woff') format('woff'),
-         url('../font/Amaranth-BoldItalic-webfont.ttf') format('truetype'),
-         url('../font/Amaranth-BoldItalic-webfont.svg#AmaranthBoldItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 /* ==========================================================================
    Headings
    ========================================================================== */
 
 h1 {
-  font-family: 'AmaranthRegular';
+  font-family: 'Amaranth', sans-serif;
   font-size: 1.95em;
   margin: 0;
   color: @orange;
-  font-weight: normal;
+  font-weight: 700;
 }
 h2 {
-  font-family: 'AmaranthRegular';
+  font-family: 'Amaranth', sans-serif;
   font-size: 1.1em;
   margin: 0.67em 0;
   color: #f25334;
-   font-weight: normal;
+   font-weight: 700;
 }
 h3 {
   font-size: 1.2em;
@@ -349,17 +296,17 @@ h6 {
    font-weight: normal;
 }
 
-.listTitle{
+.listInt{
 
-  font-family: 'AmaranthBoldItalic';
-   font-weight: normal;
+  font-family: 'Amaranth', sans-serif;
+   font-weight: 400;
 }
 
 
 .itemTitle {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Droid Sans', sans-serif;
   font-weight: 300;
-  font-size:1.1em;
+  font-size:1em;
   color:@orange;
    font-weight: normal;
 
@@ -680,9 +627,9 @@ table {
 /* ==========================================================================
     Less
    ========================================================================== */
-
- @green: #669933;
- @orange: #f25334;
+@bcgGrey: #F1F1F1;
+ @green: #97C93C;
+ @orange: #3E622D;
  .three-colscont(){
 width: 22.9em;
 display: inline-block;
@@ -720,7 +667,7 @@ vertical-align: top;
 .connect, .cart{
   margin: 0;
     font-size: 1.3em;
-      font-family: 'AmaranthRegular';
+      font-family: 'Amaranth', sans-serif;
 
   margin: 0;
   color: @orange;
@@ -752,7 +699,7 @@ img{
 
 
       .listInt{
-        color: white;
+        color: @green;
         text-decoration: none;
         margin: 0;
         font-size: 1.3em;
@@ -761,16 +708,17 @@ img{
 }
 }
 
-.listTitle a:hover{
+.listInt:hover{
 
-      border-radius: 10px;
-      background-color: #82CC39;
+      
+      background-color: @green;
       padding-top: 0.61em;
+      color: white;
 }
 
-.listTitle a:last-child:hover{
-  margin-right: 5em;
-}
+
+
+
 
 
 
@@ -784,10 +732,11 @@ img{
     visibility: visible;
     color:black;
     background-color: white;
-    width: 1037px;
+    width: 1070px;
     margin-top: 0.8em;
     border: 1px @green;
     padding-top: 1em;
+    padding-bottom: 1em;
   }
 }
 
@@ -802,27 +751,30 @@ font-size: 0.8em;
 
 
 .mainNav{
-  border-radius: 10px;
-  background-color: @green;
+  background-color: White;
   height:3.4em;
 }
-/* .mainNav a{
-  padding: 0.75em 1.5em 0.75em 1.2em; */
+
 
 .dropDwn{
   position: absolute;
   visibility: hidden;
-  right: 9.7em;
+  right: 8.7em;
 
    li{
     text-align: left;
 
+    .menuSecTitle{
+      color: @green ; 
+
+    }
+
     a{
-      color: black ; 
-      margin-left: 0.4em;
+      color:black;
+
 
       &:hover{
-        color:@green;
+        color:@orange;
       }
     }
   }
@@ -832,17 +784,26 @@ font-size: 0.8em;
     Content accueil
    ========================================================================== */
 
+.full{
+  background-color: white;
+}
 .contentwrap{
   margin: 1em 0 0 0;
     border-radius: 10px;
-      background-color: rgba(255,255,255,0.5);
+     background-color:  @bcgGrey;  
 }
 
 .sbLeft{
   float: left;
-    margin: 1em 1em 0 0;
-      width:251px;
-        border-radius: 10px;      
+  margin: 1em 1em 0 0;
+  width: 24.6%;
+  -moz-box-shadow: 0px 2px 5px -2px #656565;
+-webkit-box-shadow: 0px 2px 5px -2px #656565;
+-o-box-shadow: 0px 2px 5px -2px #656565;
+box-shadow: 0px 2px 5px -2px #656565;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
 }
 
 .sbLeft .promo, .sbLeft .actu{
@@ -853,6 +814,7 @@ font-size: 0.8em;
   float:left;
     margin: 0 0.75em 0 0;
     margin-bottom: 1em;
+    border-radius: 5px;
 }
 
 .promo section{
@@ -863,6 +825,10 @@ font-size: 0.8em;
   margin-top: 0;
 }
 
+.promo div{
+  clear:both;
+}
+
 .actu{
   clear:both;
     margin: 4.5em 0 0 0;
@@ -870,8 +836,9 @@ font-size: 0.8em;
 
 .content{    
   display: inline-block;
-    margin: 1em 0 0 0;
-      width: 756px;    
+  margin: 1em 0 0 0;
+  width: 48.5em;
+
 }
 
 .topVentes{
@@ -879,10 +846,22 @@ font-size: 0.8em;
 }
 
 .tv{
-  display:inline-block;
-    margin: 0em 10px 0 0;
-      width:238px;
-        vertical-align: top;
+  display: inline-block;
+  margin: 0em 16px 0 0;
+  width: 213px;
+  vertical-align: top;
+  padding: 1em;
+  -moz-box-shadow: 0px 2px 5px -2px #656565;
+-webkit-box-shadow: 0px 2px 5px -2px #656565;
+-o-box-shadow: 0px 2px 5px -2px #656565;
+box-shadow: 0px 2px 5px -2px #656565;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+  &:hover{
+    background-color: @bcgGrey;
+  }
 }
 
 
@@ -891,6 +870,7 @@ font-size: 0.8em;
 display: block;
 margin: 0 auto;
 margin-bottom: 1em;
+border-radius: 5px;
 }
 
 .tv:last-child{
@@ -904,20 +884,33 @@ margin-bottom: 1em;
 }
 
 .pc{
-  display:inline-block;
-    margin: 0em 10px 0 0;
-      width:238px;
-        vertical-align: top;
+display: inline-block;
+margin: 0em 16px 0 0;
+width: 213px;
+vertical-align: top;
+padding: 1em;
+-moz-box-shadow: 0px 2px 5px -2px #656565;
+-webkit-box-shadow: 0px 2px 5px -2px #656565;
+-o-box-shadow: 0px 2px 5px -2px #656565;
+box-shadow: 0px 2px 5px -2px #656565;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+  &:hover{
+    background-color: @bcgGrey;
+  }
 }
 
 .pc img{
 display: block;
 margin: 0 auto;
 margin-bottom: 1em;
+border-radius: 5px;
 }
 
 .pc:last-child{
-
+margin-right:0px;
     vertical-align: top;
 }
 
@@ -927,27 +920,37 @@ margin-bottom: 1em;
 }
 
 .nv{
-  display:inline-block;
-     margin: 0em 10px 0 0;
-      width:238px;
-        vertical-align: top;
+display: inline-block;
+margin: 0em 16px 0 0;
+width: 213px;
+vertical-align: top;
+padding: 1em;
+-moz-box-shadow: 0px 2px 5px -2px #656565;
+-webkit-box-shadow: 0px 2px 5px -2px #656565;
+-o-box-shadow: 0px 2px 5px -2px #656565;
+box-shadow: 0px 2px 5px -2px #656565;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+
+  &:hover{
+    background-color: @bcgGrey;
+  }
 }
 
 .nv img{
 display: block;
 margin: 0 auto;
+border-radius: 5px;
 }
 
 .nv:last-child{
-
+margin-right:0px;
   vertical-align: top;
 }
 
 .colophon{
   margin: 2em 0 0 0;
-    height: 113px;
-      background: url('../img/footer.png') repeat-x;
-        text-indent: -99999px;
 }
 
 .siteMap{
@@ -979,10 +982,41 @@ list-style-type: none;
   color:@green;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
+.descr{
+  font-size: 0.9em;
+}
+/* ==========================================================================
+   Product Page
+   ========================================================================== */
+.sbRight{
+  float:right;
+  margin: 1em 0 0 1em;
+  width: 24.6%;
+  -moz-box-shadow: 0px 2px 5px -2px #656565;
+  -webkit-box-shadow: 0px 2px 5px -2px #656565;
+  -o-box-shadow: 0px 2px 5px -2px #656565;
+  box-shadow: 0px 2px 5px -2px #656565;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.contentProduct{
+    display: block;
+  margin: 0 0 0 1em;
+  width: 48.4em;
+
+    img{
+      height:auto;
+      width:33.33333%;
+      float:left;
+    }
+
+    h2{
+      margin:0;
+    }
+}
 
 /* ==========================================================================
    Media Queries
