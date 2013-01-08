@@ -12,13 +12,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Amaranth:400,700' rel='stylesheet' type='text/css'>
 
         
     </head>
     <body>
-        <!--[if lt IE 7]>
+        <!--[if lt IE 8]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 <h1 class="hiddenTitle">Site de SeBio - Produits naturels, bio et écologiques pour toute la famille</h1>
@@ -28,10 +28,10 @@
         <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo Sebio" title="logo de Sebio" width="174" height="45"></a>
         <div class="logBask">
             <h1 class="hiddenTitle">Votre espace</h1>
-                <div id="login">
+                <a href="html/login.html"><div id="login">
                     <img src="img/logico.png" alt="Icone de connexion" width="52" height="52">
                     <span class="connect">Se connecter</span>
-                </div>
+                </div></a>
                 <div id="basket">
                     <img src="img/cartico.png" alt="Icone du panier" width="52" height="52">
                     <span class="cart">Panier</span>
@@ -58,14 +58,16 @@
                                     <li><a href="">Accouchement serein</a></li>
                                     <li><a href="">Livres</a></li>
                                 </ul>
-                            </li>
+                            
                                 <ul>
                                     <li><a href="">Soins du mamelon</a></li>
                                     <li><a href="">Accessoires et compléments alimentaires</a></li>
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                        </li>
+                    
+
                     
                     <li class="listSubTitle"><a class="menuSecTitle" href="">bébés et enfants</a>
                         <ul>
@@ -242,6 +244,7 @@
                 </ul>
             </li>
     </ul>
+
 </nav>
 </header>
 </div>
@@ -277,18 +280,19 @@
 <div class="content">
     <section class="topVentes">
         <h1>Nos Meilleures ventes</h1>
+
             <section class="tv">
-                <a href="/html/productpage.html">
+               
                 <div itemscope itemtype="http://schema.org/Product">
                     <h2 class="itemTitle" itemprop="name"> <a href="html/productpage.html">Déodorant Douceur Rosée</a></h2>
-                    <img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/>
+                    <a href="html/productpage.html"><a href="html/productpage.html"><img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/></a></a>
                      <span class="descr" itemprop="description">Le déodorant douceur rosée absorbe la transpiration grâce à sa poudre de bambou... </span>
-                <div itemprop="aggregateRating"itemscope itemtype="http://schema.org/AggregateRating">
-                    <span itemprop="ratingValue">4.5</span>/5<span>
+                <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <span class="rating" itemprop="ratingValue">4.5/5</span>
                     <!-- <span>basé sur <span itemprop="reviewCount">10</span> Avis</span> -->
                 </div>
                 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                    <span itemprop="price">6,90€</span>
+                    <span class="price" itemprop="price">6,90€</span>
                     <!-- <link itemprop="availability" href="http://schema.org/InStock" /><span>En stock</span> -->
                 </div>
                     <!-- Customer reviews:
@@ -304,19 +308,23 @@
                     <span itemprop="description">The lamp burned out and now I have to replace
                     it. </span> -->
                 </div>
-                </a>
+                <div class="productLinks">
+                <a class="sendBtn" href="html/cart.html">Panier</a>
+                
+                </div>
             </section>
+ 
             <section class="tv">
                 <div itemscope itemtype="http://schema.org/Product">
                     <h2 class="itemTitle" itemprop="name"> <a href="product.html">Déodorant Douceur Rosée</a></h2>
-                    <img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/>
+                    <a href="html/productpage.html"><img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/></a>
                      <span class="descr" itemprop="description">Le déodorant douceur rosée absorbe la transpiration grâce à sa poudre de bambou... </span>
-                <div itemprop="aggregateRating"itemscope itemtype="http://schema.org/AggregateRating">
-                    <span itemprop="ratingValue">4.5</span>/5<span>
+                <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <span class="rating" itemprop="ratingValue">4.5/5</span>
                     <!-- <span>basé sur <span itemprop="reviewCount">10</span> Avis</span> -->
                 </div>
                 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                    <span itemprop="price">6,90€</span>
+                    <span class="price" itemprop="price">6,90€</span>
                     <!-- <link itemprop="availability" href="http://schema.org/InStock" /><span>En stock</span> -->
                 </div>
                     <!-- Customer reviews:
@@ -332,17 +340,24 @@
                     <span itemprop="description">The lamp burned out and now I have to replace
                     it. </span> -->
                 </div>
-            </section> <section class="tv">
+
+                <div class="productLinks">
+                <a class="sendBtn" href="html/cart.html">Panier</a>
+                
+                </div>
+
+            </section> 
+            <section class="tv">
                 <div itemscope itemtype="http://schema.org/Product">
                     <h2 class="itemTitle" itemprop="name"> <a href="product.html">Déodorant Douceur Rosée</a></h2>
-                    <img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/>
+                    <a href="html/productpage.html"><img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/></a>
                      <span class="descr" itemprop="description">Le déodorant douceur rosée absorbe la transpiration grâce à sa poudre de bambou... </span>
-                <div itemprop="aggregateRating"itemscope itemtype="http://schema.org/AggregateRating">
-                    <span itemprop="ratingValue">4.5</span>/5<span>
+                <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <span class="rating" itemprop="ratingValue">4.5/5</span>
                     <!-- <span>basé sur <span itemprop="reviewCount">10</span> Avis</span> -->
                 </div>
                 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                    <span itemprop="price">6,90€</span>
+                    <span class="price" itemprop="price">6,90€</span>
                     <!-- <link itemprop="availability" href="http://schema.org/InStock" /><span>En stock</span> -->
                 </div>
                     <!-- Customer reviews:
@@ -358,6 +373,13 @@
                     <span itemprop="description">The lamp burned out and now I have to replace
                     it. </span> -->
                 </div>
+
+                <div class="productLinks">
+                <a class="sendBtn" href="html/cart.html">Panier</a>
+                
+                </div>
+
+
             </section>
     </section>
 
@@ -366,14 +388,14 @@
             <section class="pc">
                    <div itemscope itemtype="http://schema.org/Product">
                     <h2 class="itemTitle" itemprop="name"> <a href="product.html">Déodorant Douceur Rosée</a></h2>
-                    <img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/>
+                    <a href="html/productpage.html"><img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/></a>
                      <span class="descr" itemprop="description">Le déodorant douceur rosée absorbe la transpiration grâce à sa poudre de bambou... </span>
-                <div itemprop="aggregateRating"itemscope itemtype="http://schema.org/AggregateRating">
-                    <span itemprop="ratingValue">4.5</span>/5<span>
+                <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <span class="rating" itemprop="ratingValue">4.5/5</span>
                     <!-- <span>basé sur <span itemprop="reviewCount">10</span> Avis</span> -->
                 </div>
                 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                    <span itemprop="price">6,90€</span>
+                    <span class="price" itemprop="price">6,90€</span>
                     <!-- <link itemprop="availability" href="http://schema.org/InStock" /><span>En stock</span> -->
                 </div>
                     <!-- Customer reviews:
@@ -389,18 +411,25 @@
                     <span itemprop="description">The lamp burned out and now I have to replace
                     it. </span> -->
                 </div>
+
+                                <div class="productLinks">
+                <a class="sendBtn" href="html/cart.html">Panier</a>
+                
+                </div>
+
+
             </section>
             <section class="pc">
                   <div itemscope itemtype="http://schema.org/Product">
                     <h2 class="itemTitle" itemprop="name"> <a href="product.html">Déodorant Douceur Rosée</a></h2>
-                    <img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/>
+                    <a href="html/productpage.html"><img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/></a>
                      <span class="descr" itemprop="description">Le déodorant douceur rosée absorbe la transpiration grâce à sa poudre de bambou... </span>
-                <div itemprop="aggregateRating"itemscope itemtype="http://schema.org/AggregateRating">
-                    <span itemprop="ratingValue">4.5</span>/5<span>
+                <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <span class="rating" itemprop="ratingValue">4.5/5</span>
                     <!-- <span>basé sur <span itemprop="reviewCount">10</span> Avis</span> -->
                 </div>
                 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                    <span itemprop="price">6,90€</span>
+                    <span class="price" itemprop="price">6,90€</span>
                     <!-- <link itemprop="availability" href="http://schema.org/InStock" /><span>En stock</span> -->
                 </div>
                     <!-- Customer reviews:
@@ -416,18 +445,25 @@
                     <span itemprop="description">The lamp burned out and now I have to replace
                     it. </span> -->
                 </div>
+
+                                <div class="productLinks">
+                <a class="sendBtn" href="html/cart.html">Panier</a>
+                
+                </div>
+
+
             </section>
             <section class="pc ">
               <div itemscope itemtype="http://schema.org/Product">
                     <h2 class="itemTitle" itemprop="name"> <a href="product.html">Déodorant Douceur Rosée</a></h2>
-                    <img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/>
+                    <a href="html/productpage.html"><img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/></a>
                      <span class="descr" itemprop="description">Le déodorant douceur rosée absorbe la transpiration grâce à sa poudre de bambou... </span>
-                <div itemprop="aggregateRating"itemscope itemtype="http://schema.org/AggregateRating">
-                    <span itemprop="ratingValue">4.5</span>/5<span>
+                <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                    <span class="rating" itemprop="ratingValue">4.5/5</span>
                     <!-- <span>basé sur <span itemprop="reviewCount">10</span> Avis</span> -->
                 </div>
                 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                    <span itemprop="price">6,90€</span>
+                    <span class="price" itemprop="price">6,90€</span>
                     <!-- <link itemprop="availability" href="http://schema.org/InStock" /><span>En stock</span> -->
                 </div>
                     <!-- Customer reviews:
@@ -443,6 +479,13 @@
                     <span itemprop="description">The lamp burned out and now I have to replace
                     it. </span> -->
                 </div>
+
+                                <div class="productLinks">
+                <a class="sendBtn" href="html/cart.html">Panier</a>
+                
+                </div>
+
+
             </section>
     </section>
 
@@ -451,13 +494,13 @@
             <section class="nv">
  <div itemscope itemtype="http://schema.org/Product">
                     <h2 class="itemTitle" itemprop="name"> <a href="product.html">Déodorant Douceur Rosée</a></h2>
-                    <img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/>
-                        <div itemprop="aggregateRating"itemscope itemtype="http://schema.org/AggregateRating">
-                            <span>évaluation <span itemprop="ratingValue">4.5</span>/5<span>
+                    <a href="html/productpage.html"><img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/></a>
+                        <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                            <span>évaluation <span class="rating" itemprop="ratingValue">4.5/5</span></span>
                             <span>basé sur <span itemprop="reviewCount">10</span> Avis</span>
                         </div>
                         <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                            <span itemprop="price">6,90€</span>
+                            <span class="price" itemprop="price">6,90€</span>
                             <link itemprop="availability" href="http://schema.org/InStock" /><span>En stock</span>
                         </div>
                     <span itemprop="description">Le déodorant douceur rosée absorbe la transpiration grâce à sa poudre de bambou... </span>
@@ -474,17 +517,24 @@
                     <span itemprop="description">The lamp burned out and now I have to replace
                     it. </span> -->
                 </div>
+
+                                <div class="productLinks">
+                <a class="sendBtn" href="html/cart.html">Panier</a>
+                
+                </div>
+
+
             </section>
             <section class="nv">
                 <div itemscope itemtype="http://schema.org/Product">
                     <h2 class="itemTitle" itemprop="name"> <a href="product.html">Déodorant Douceur Rosée</a></h2>
-                    <img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/>
-                        <div itemprop="aggregateRating"itemscope itemtype="http://schema.org/AggregateRating">
-                            <span>évaluation <span itemprop="ratingValue">4.5</span>/5<span>
+                    <a href="html/productpage.html"><img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/></a>
+                        <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                            <span>évaluation <span class="rating" itemprop="ratingValue">4.5/5</span></span>
                             <span>basé sur <span itemprop="reviewCount">10</span> Avis</span>
                         </div>
                         <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                            <span itemprop="price">6,90€</span>
+                            <span class="price" itemprop="price">6,90€</span>
                             <link itemprop="availability" href="http://schema.org/InStock" /><span>En stock</span>
                         </div>
                     <span itemprop="description">Le déodorant douceur rosée absorbe la transpiration grâce à sa poudre de bambou... </span>
@@ -501,17 +551,24 @@
                     <span itemprop="description">The lamp burned out and now I have to replace
                     it. </span> -->
                 </div>
+
+                                <div class="productLinks">
+                <a class="sendBtn" href="html/cart.html">Panier</a>
+                
+                </div>
+
+
             </section>
             <section class="nv">
                <div itemscope itemtype="http://schema.org/Product">
                     <h2 class="itemTitle" itemprop="name"> <a href="product.html">Déodorant Douceur Rosée</a></h2>
-                    <img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/>
-                        <div itemprop="aggregateRating"itemscope itemtype="http://schema.org/AggregateRating">
-                            <span>évaluation <span itemprop="ratingValue">4.5</span>/5<span>
+                    <a href="html/productpage.html"><img src="img/product.png" alt='Déodorant douceur rosée' width="213" height="150"/></a>
+                         <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+                            <span>évaluation <span class="rating" itemprop="ratingValue">4.5/5</span></span>
                             <span>basé sur <span itemprop="reviewCount">10</span> Avis</span>
                         </div>
                         <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                            <span itemprop="price">6,90€</span>
+                            <span class="price" itemprop="price">6,90€</span>
                             <link itemprop="availability" href="http://schema.org/InStock" /><span>En stock</span>
                         </div>
                     <span itemprop="description">Le déodorant douceur rosée absorbe la transpiration grâce à sa poudre de bambou... </span>
@@ -528,26 +585,35 @@
                     <span itemprop="description">The lamp burned out and now I have to replace
                     it. </span> -->
                 </div>
+
+                                <div class="productLinks">
+                <a class="sendBtn" href="html/cart.html">Panier</a>
+                
+                </div>
+
+
             </section>
         </section>    
 </div>
 </div>
 
 </div>
-</div>
+
 
 <div class="colophon"> Décoration du footer</div>
 
 <div class="globalwrap">
 <section class="siteMap">
     <h1>Plan du site</h1>
-<nav class="altnav">
-    <ul>
-            <li class="alistTitle"><h3><a href="">Mamans et enfants</a></h3>
+
+<nav>    
+<h1 class="hiddenTitle">Menu de navigation</h1>
+    <ul class="mainNav">
+            <li class="listTitle"><a class="listInt" href="">Mamans et enfants</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Grossesse et allaitement</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Grossesse et allaitement</a>
                         <ul>
-                            <li><h5 class="alistSsubTitle"><a href="">Beauté et soins</a></h5>
+                            <li><a href="">Beauté et soins</a>
                                 <ul>
                                     <li><a href="">Complément alimentaires</a></li>
                                     <li><a href="">Relaxation et soins du corps</a></li>
@@ -555,28 +621,31 @@
                                     <li><a href="">Accouchement serein</a></li>
                                     <li><a href="">Livres</a></li>
                                 </ul>
-                            </li>
-                            <li><h5 class="alistSsubTitle"><a href="">Allaitement</a></h5>
+                            
                                 <ul>
                                     <li><a href="">Soins du mamelon</a></li>
                                     <li><a href="">Accessoires et compléments alimentaires</a></li>
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li><h4 class="alistSubTitle"><a href="">Listes de naissance</a></h4></li>
-                    <li><h4 class="alistSubTitle"><a href="">bébés et enfants</a></h4>
+                        </li>
+                    
+
+                    
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">bébés et enfants</a>
                         <ul>
                             <li><a href="">La toilette</a></li>
                             <li><a href="">Bien-être et santé</a></li>
                             <li><a href="">Autour du sommeil</a></li>
                             <li><a href="">Biberons et sucettes</a></li>
                             <li><a href="">Produits solaire</a></li>
+                            <li class="listSubTitle"><a class="menuSecTitle" href="">Location de porte bébés</a></li>
+                            <li class="listSubTitle"><a class="menuSecTitle" href="">Listes de naissance</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">couches  culottes et maillots</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">couches  culottes et maillots</a>
                         <ul>
-                            <li><h5 class="alistSsubTitle"><a href="">Couches</a></h5>
+                            <li><a href="">Couches</a>
                                 <ul>
                                     <li><a href="">Lavable</a></li>
                                     <li><a href="">Couches classiques</a></li>
@@ -584,7 +653,7 @@
                                     <li><a href="">Doublure et inserts</a></li>
                                 </ul>
                             </li>
-                            <li><h5 class="alistSsubTitle"><a href="">Culottes</a></h5>
+                            <li><a href="">Culottes</a>
                                 <ul>
                                     <li><a href="">Culottes de protection</a></li>
                                 </ul>
@@ -592,10 +661,10 @@
                                     <li><a href="">Culottes d'apprentissage</a></li>
                                 </ul>
                             </li>
-                            <li><h5 class="alistSsubTitle"><a href="">Maillots</a></h5></li>
+                            <li><a href="">Maillots</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Alimentation bio pour bébés</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Alimentation bio pour bébés</a>
                         <ul>
                             <li><a href="">Laits infantiles</a></li>
                             <li><a href="">Céréales</a></li>
@@ -605,7 +674,7 @@
                             <li><a href="">Boissons, accessoires et ustensiles</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">jeux et jouets</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">jeux et jouets</a>
                         <ul>
                             <li><a href="">Jeux de société</a></li>
                             <li><a href="">Puzzles et jeux de logique</a></li>
@@ -614,12 +683,12 @@
                             <li><a href="">Activité manuelles</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Location de porte bébés</a></h4></li>
+
                 </ul>
             </li>
-            <li class="alistTitle"><h3 ><a href="">Santé et nature</a></h3>
+            <li class="listTitle"><a class="listInt" href="">Santé et nature</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Santé et bien être</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Santé et bien être</a>
                         <ul>
                             <li><a href="">Complément alimentaires</a></li>
                             <li><a href="">Spécial hiver</a></li>
@@ -630,7 +699,7 @@
                             <li><a href="">Bijoux bienfaisants</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Hygiène et soin</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Hygiène et soin</a>
                         <ul>
                             <li><a href="">Déodorant</a></li>
                             <li><a href="">Savon et gel douche</a></li>
@@ -646,7 +715,7 @@
                             <li><a href="">Eaux de toilette</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Aromathérapie</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Aromathérapie</a>
                         <ul>
                             <li><a href="">Huiles essentielles</a></li>
                             <li><a href="">Huiles végétales</a></li>
@@ -658,14 +727,14 @@
                             <li><a href="">Cosmétiques</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Nos ateliers nature</a></h4></li>
-                    <li><h4 class="alistSubTitle"><a href="">fleurs de Bach</a></h4></li>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Nos ateliers nature</a></li>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">fleurs de Bach</a></li>
                 </ul>
             </li>
            
-            <li class="alistTitle"><h3><a href="">Maison et loisir</a></h3>
+            <li class="listTitle"><a class="listInt" href="">Maison et loisir</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Papeterie</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Papeterie</a>
                         <ul>
                             <li><a href="">Papier</a></li>
                             <li><a href="">Classer</a></li>
@@ -676,14 +745,14 @@
                             <li><a href="">Cahiers et calendriers</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Livres</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Livres</a>
                         <ul>
                             <li><a href="">Adultes</a></li>
                             <li><a href="">Enfants</a></li>
                             <li><a href="">Exercices</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">La maison au naturel</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">La maison au naturel</a>
                         <ul>
                             <li><a href="">Linge de bain</a></li>
                             <li><a href="">Articles de cuisine</a></li>
@@ -697,7 +766,7 @@
                             <li><a href="">Le jardin au naturel</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Produits d'entretien</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Produits d'entretien</a>
                         <ul>
                             <li><a href="">Vaisselle</a></li>
                             <li><a href="">Sols et sanitaires</a></li>
@@ -710,36 +779,36 @@
                 </ul>
             </li>
 
-             <li class="alistTitle"><h3><a href="">Mode</a></h3>
+             <li class="listTitle"><a class="listInt" href="">Mode</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Vêtements</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Vêtements</a>
                         <ul>
                             <li><a href="">Hommes</a></li>
                             <li><a href="">Femmes</a></li>
                             <li><a href="">Enfants</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Tissus</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Tissus</a>
                         <ul>
                             <li><a href="">Maille de coton biologique</a></li>
                             <li><a href="">Coton tissé biologique</a></li>
                             <li><a href="">Ouattes et molletons</a></li>
                             <li><a href="">Tissu bio imperméable</a></li>
                         </ul>
-                        <li><h3><a href="">Bons plans</a></h3>
-                <ul>
+                    </li>
+                   
+                </ul>
+            </li>
+            <li class="listTitle"><a class="listInt" href="">Bons plans</a>
+                <ul class="dropDwn">
                     <li><a href="">Nouveautés</a></li>
                     <li><a href="">Articles en liquidation</a></li>
                     <li><a href="">Chèque cadeaux</a></li>
                 </ul>
             </li>
-                    </li>
-                   
-                </ul>
-            </li>
-  
     </ul>
-    </nav>
+
+</nav>
 
 </section>
 

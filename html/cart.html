@@ -17,15 +17,15 @@
 
         
     </head>
-    <body class="productPage">
-        <!--[if lt IE 7]>
+    <body class="cartPage">
+        <!--[if lt IE 8]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 <h1 class="hiddenTitle">Site de SeBio - Produits naturels, bio et écologiques pour toute la famille</h1>
 <div class="globalwrap">
     <header>
         <div class="wsHeader">
-        <a class="logo" href="index.html"><img src="../img/logo.png" alt="Logo Sebio" title="logo de Sebio" width="174" height="45"></a>
+        <a class="logo" href="../index.html"><img src="../img/logo.png" alt="Logo Sebio" title="logo de Sebio" width="174" height="45"></a>
         <div class="logBask">
             <h1 class="hiddenTitle">Votre espace</h1>
                                 <a href="login.html"><div id="login">
@@ -41,6 +41,7 @@
         </div>
 
     </div>
+
 <nav>    
 <h1 class="hiddenTitle">Menu de navigation</h1>
     <ul class="mainNav">
@@ -248,87 +249,71 @@
 </div>
 <div class="full">
 <div class="globalwrap">
+    <div class="cartDiv">
 
-<div class="sbRight">
-    <section class="bpBar">
-        <hgroup>
-            <h1 class="hiddenTitle">prix</h1>
-            <h1>6,4€</h1>
-        </hgroup>
-        <div>
-            <span class="qt">Quantité&nbsp;:</span>
+<h1>votre panier</h1>
 
-            <input class="qtt" type="text" value=1>
+<table class="cartTable">
+        <thead>
+            <tr>
+                <th>Désignation</th>
+                <th class="dispo">Disponibilité</th>
+                <th class="px">Prix</th>
+                <th>Quantité</th>
+                <th>total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="desi"><img src="../img/productMini.png" height="75" width="56" alt="">Déodorant douceur rosée</td>
+                <td class="dispo">En stock</td>
+                <td class="px">6,40€</td>
+                <td>1</td>
+                <td>6,40€</td>
+            </tr>
 
-            <input class="sendBtn" type="button" value="Ajouter au panier">
-        </div>
+            <tr>
+                <td class="desi"><img src="../img/productMini.png" height="75" width="56" alt="">Déodorant douceur rosée</td>
+                <td class="dispo">En stock</td>
+                <td class="px">6,40€</td>
+                <td>1</td>
+                <td>6,40€</td>
+            </tr>
 
-        <div class="dispo">
-            <h1>Disponibilité</h1>        
-            <a href="html/enstock.html">En stock</a>
-            <p>disponible immédiatement</p>
-        </div>
+            <tr>
+                <td class="desi"><img src="../img/productMini.png" height="75" width="56" alt="">Déodorant douceur rosée</td>
+                <td class="dispo">En stock</td>
+                <td class="px">6,40€</td>
+                <td>1</td>
+                <td>6,40€</td>
+            </tr>
+           
 
-        <div class="payementOpt">
-            <h1 class="hiddenTitle">Moyens de payement</h1>
-            <a href="#">Kiala</a>
-            <a href="#">Ups</a>
-            <a href="#">La poste</a>
-        </div>
-    </section>
+        </tbody>
+    </table>
+
+    <div class="cartTotal">
+        <p>Total de votre panier <span class="totalPrice">19.20€</span></p>
+    </div>
 
 
-        
-</div>
-<div class="contentProduct">
-<hgroup>
-<h1>Déodorant douceur rosée</h1>
-<h2>Déodorant 75ml à la fleur de rose</h2>
-</hgroup>
-<div class="contentImg">
-<img src="../img/productBig.png" alt="Photo du déodorant à bille Douceur Rosée" height="896" width="672">
-</div>
-<div class="contentFiche">
-<span class="note">Note Client:</span><span class="rate">4.5/5</span>
-<a href="#clientsrating">2 Avis</a>
-<a href="#makeacomment">Donnez votre avis</a>
-<h3>Description&nbsp;:</h3>
-<p>Le déodorant Douceur Rosée Born to Bio&#174; absorbe la transpiration grâce à sa poudre de bambou et limite la prolifération bactérienne responsable des mauvaises odeurs grâce à son complexe végétal d'huiles essentielles.</p>
-
-<p><p>Votre peau est apaisée (bois de rose) et adoucie (eau florale de sauge).</p>
-
-<p>Ne tâche pas les vêtements. Il est garanti sans alcool, sans paraben et sans aluminium</p>
-
-<h3>composition&nbsp;:</h3>
-
-<ul>
-    <li>eau florale de sapin</li>
-    <li>eau florale de sauge</li>
-    <li>glycérine</li>
-    <li>huile de bois de rose</li>
-    <li>extrait de poudre de bambou</li>
-    <li>huile de palmarosa</li>
-    <li>huile de cyprès</li>
-    <li>huile d'arbre à thé</li>
-</ul>
 
 </div>
 </div>
 </div>
-</div>
-
 <div class="colophon"></div>
 
 <div class="globalwrap">
 <section class="siteMap">
     <h1>Plan du site</h1>
-<nav class="altnav">
-    <ul>
-            <li class="alistTitle"><h3><a href="">Mamans et enfants</a></h3>
+<nav class="altNav">    
+<h1 class="hiddenTitle">Menu de navigation</h1>
+    <ul class="mainNav">
+            <li class="listTitle"><a class="listInt" href="">Mamans et enfants</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Grossesse et allaitement</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Grossesse et allaitement</a>
                         <ul>
-                            <li><h5 class="alistSsubTitle"><a href="">Beauté et soins</a></h5>
+                            <li><a href="">Beauté et soins</a>
                                 <ul>
                                     <li><a href="">Complément alimentaires</a></li>
                                     <li><a href="">Relaxation et soins du corps</a></li>
@@ -336,28 +321,31 @@
                                     <li><a href="">Accouchement serein</a></li>
                                     <li><a href="">Livres</a></li>
                                 </ul>
-                            </li>
-                            <li><h5 class="alistSsubTitle"><a href="">Allaitement</a></h5>
+                            
                                 <ul>
                                     <li><a href="">Soins du mamelon</a></li>
                                     <li><a href="">Accessoires et compléments alimentaires</a></li>
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li><h4 class="alistSubTitle"><a href="">Listes de naissance</a></h4></li>
-                    <li><h4 class="alistSubTitle"><a href="">bébés et enfants</a></h4>
+                        </li>
+                    
+
+                    
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">bébés et enfants</a>
                         <ul>
                             <li><a href="">La toilette</a></li>
                             <li><a href="">Bien-être et santé</a></li>
                             <li><a href="">Autour du sommeil</a></li>
                             <li><a href="">Biberons et sucettes</a></li>
                             <li><a href="">Produits solaire</a></li>
+                            <li class="listSubTitle"><a class="menuSecTitle" href="">Location de porte bébés</a></li>
+                            <li class="listSubTitle"><a class="menuSecTitle" href="">Listes de naissance</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">couches  culottes et maillots</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">couches  culottes et maillots</a>
                         <ul>
-                            <li><h5 class="alistSsubTitle"><a href="">Couches</a></h5>
+                            <li><a href="">Couches</a>
                                 <ul>
                                     <li><a href="">Lavable</a></li>
                                     <li><a href="">Couches classiques</a></li>
@@ -365,7 +353,7 @@
                                     <li><a href="">Doublure et inserts</a></li>
                                 </ul>
                             </li>
-                            <li><h5 class="alistSsubTitle"><a href="">Culottes</a></h5>
+                            <li><a href="">Culottes</a>
                                 <ul>
                                     <li><a href="">Culottes de protection</a></li>
                                 </ul>
@@ -373,10 +361,10 @@
                                     <li><a href="">Culottes d'apprentissage</a></li>
                                 </ul>
                             </li>
-                            <li><h5 class="alistSsubTitle"><a href="">Maillots</a></h5></li>
+                            <li><a href="">Maillots</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Alimentation bio pour bébés</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Alimentation bio pour bébés</a>
                         <ul>
                             <li><a href="">Laits infantiles</a></li>
                             <li><a href="">Céréales</a></li>
@@ -386,7 +374,7 @@
                             <li><a href="">Boissons, accessoires et ustensiles</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">jeux et jouets</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">jeux et jouets</a>
                         <ul>
                             <li><a href="">Jeux de société</a></li>
                             <li><a href="">Puzzles et jeux de logique</a></li>
@@ -395,12 +383,12 @@
                             <li><a href="">Activité manuelles</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Location de porte bébés</a></h4></li>
+
                 </ul>
             </li>
-            <li class="alistTitle"><h3 ><a href="">Santé et nature</a></h3>
+            <li class="listTitle"><a class="listInt" href="">Santé et nature</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Santé et bien être</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Santé et bien être</a>
                         <ul>
                             <li><a href="">Complément alimentaires</a></li>
                             <li><a href="">Spécial hiver</a></li>
@@ -411,7 +399,7 @@
                             <li><a href="">Bijoux bienfaisants</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Hygiène et soin</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Hygiène et soin</a>
                         <ul>
                             <li><a href="">Déodorant</a></li>
                             <li><a href="">Savon et gel douche</a></li>
@@ -427,7 +415,7 @@
                             <li><a href="">Eaux de toilette</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Aromathérapie</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Aromathérapie</a>
                         <ul>
                             <li><a href="">Huiles essentielles</a></li>
                             <li><a href="">Huiles végétales</a></li>
@@ -439,14 +427,14 @@
                             <li><a href="">Cosmétiques</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Nos ateliers nature</a></h4></li>
-                    <li><h4 class="alistSubTitle"><a href="">fleurs de Bach</a></h4></li>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Nos ateliers nature</a></li>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">fleurs de Bach</a></li>
                 </ul>
             </li>
            
-            <li class="alistTitle"><h3><a href="">Maison et loisir</a></h3>
+            <li class="listTitle"><a class="listInt" href="">Maison et loisir</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Papeterie</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Papeterie</a>
                         <ul>
                             <li><a href="">Papier</a></li>
                             <li><a href="">Classer</a></li>
@@ -457,14 +445,14 @@
                             <li><a href="">Cahiers et calendriers</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Livres</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Livres</a>
                         <ul>
                             <li><a href="">Adultes</a></li>
                             <li><a href="">Enfants</a></li>
                             <li><a href="">Exercices</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">La maison au naturel</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">La maison au naturel</a>
                         <ul>
                             <li><a href="">Linge de bain</a></li>
                             <li><a href="">Articles de cuisine</a></li>
@@ -478,7 +466,7 @@
                             <li><a href="">Le jardin au naturel</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Produits d'entretien</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Produits d'entretien</a>
                         <ul>
                             <li><a href="">Vaisselle</a></li>
                             <li><a href="">Sols et sanitaires</a></li>
@@ -491,36 +479,36 @@
                 </ul>
             </li>
 
-             <li class="alistTitle"><h3><a href="">Mode</a></h3>
+             <li class="listTitle"><a class="listInt" href="">Mode</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Vêtements</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Vêtements</a>
                         <ul>
                             <li><a href="">Hommes</a></li>
                             <li><a href="">Femmes</a></li>
                             <li><a href="">Enfants</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Tissus</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Tissus</a>
                         <ul>
                             <li><a href="">Maille de coton biologique</a></li>
                             <li><a href="">Coton tissé biologique</a></li>
                             <li><a href="">Ouattes et molletons</a></li>
                             <li><a href="">Tissu bio imperméable</a></li>
                         </ul>
-                        <li><h3><a href="">Bons plans</a></h3>
-                <ul>
+                    </li>
+                   
+                </ul>
+            </li>
+            <li class="listTitle"><a class="listInt" href="">Bons plans</a>
+                <ul class="dropDwn">
                     <li><a href="">Nouveautés</a></li>
                     <li><a href="">Articles en liquidation</a></li>
                     <li><a href="">Chèque cadeaux</a></li>
                 </ul>
             </li>
-                    </li>
-                   
-                </ul>
-            </li>
-  
     </ul>
-    </nav>
+
+</nav>
 
 </section>
 

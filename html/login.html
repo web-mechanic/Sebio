@@ -17,8 +17,8 @@
 
         
     </head>
-    <body class="productPage">
-        <!--[if lt IE 7]>
+    <body class="login">
+        <!--[if lt IE 8]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 <h1 class="hiddenTitle">Site de SeBio - Produits naturels, bio et écologiques pour toute la famille</h1>
@@ -28,10 +28,10 @@
         <a class="logo" href="index.html"><img src="../img/logo.png" alt="Logo Sebio" title="logo de Sebio" width="174" height="45"></a>
         <div class="logBask">
             <h1 class="hiddenTitle">Votre espace</h1>
-                <div id="login">
+                                <a href="login.html"><div id="login">
                     <img src="../img/logico.png" alt="Icone de connexion" width="52" height="52">
                     <span class="connect">Se connecter</span>
-                </div>
+                </div></a>
                 <div id="basket">
                     <img src="../img/cartico.png" alt="Icone du panier" width="52" height="52">
                     <span class="cart">Panier</span>
@@ -41,7 +41,6 @@
         </div>
 
     </div>
-
 
 <nav>    
 <h1 class="hiddenTitle">Menu de navigation</h1>
@@ -58,14 +57,16 @@
                                     <li><a href="">Accouchement serein</a></li>
                                     <li><a href="">Livres</a></li>
                                 </ul>
-                            </li>
+                            
                                 <ul>
                                     <li><a href="">Soins du mamelon</a></li>
                                     <li><a href="">Accessoires et compléments alimentaires</a></li>
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                        </li>
+                    
+
                     
                     <li class="listSubTitle"><a class="menuSecTitle" href="">bébés et enfants</a>
                         <ul>
@@ -242,6 +243,7 @@
                 </ul>
             </li>
     </ul>
+
 </nav>
 </header>
 </div>
@@ -251,62 +253,83 @@
 
 <h1>Identification</h1>
 
-<form action="">
+<form action="confirmation.html">
 
-<label for="email">Adresse e-mail&nbsp;</label>
-<input type="e-mail" placeholder="jhondoe@gmail.com">
+<fieldset>
 
-<input type="radio">
-<label for="">Nouveau client</label>
+    <legend>Général</legend>
 
-<input type="radio">
-<label for="">Déja client</label>
+<label class="email" for="email">Adresse e-mail&nbsp;
+<input required value="" id="email" type="email" placeholder="jhondoe@gmail.com">
+</label>
+<ul class="listOpt">    
+<li><label class="newClient" for="newClient">Nouveau client</label>
+<input  name="clientType" id="newClient"  type="radio"></li>
 
-<input type="radio">
-<label for="">Je souhaite passer ma commande comme invité</label>
 
-</form>
+<li><label class="alreadyClient" for="alreadyClient">Déja client</label>
+<input name="clientType" id="alreadyClient" type="radio"></li>
 
-/<form action="">
 
-<label for="emailverif">Confirmez votre mail&nbsp;:</label>
-<input type="e-mail" placeholder="Confirmez votre e-mail" >
-
-<input type="checkbox">
-<label for="">En cochant cette case, j'accepte de recevoir les offres promotionnelles de Sebio. Votre adresse sera sécurisée et ne sera pas transmise à nos tiers</label>
-
-<label for="">Votre civilité</label>
-<ul>
-    <li><input type="radio"><label for="">M.</label></li>
-    <li><input type="radio"><label for="">Mlle.</label></li>
-    <li><input type="radio"><label for="">Mme</label></li>
+<li><label class="invite" for="invite">Passer ma commande comme invité</label>
+<input name="clientType" id="invite" type="radio"></li>
 </ul>
 
-<label for="">Votre prénom&nbsp;:</label>
-<input type="text" placeholder="Jhon">
+</fieldset>
 
-<label for="">Votre nom&nbsp;:</label>
-<input type="text" placeholder="Doe">
+<fieldset>
 
-<label for="">Votre adresse&nbsp;:</label>
-<input type="text" placeholder="5, Rue martin-Jacques">
+    <legend>détails</legend>
+<label class="emailVevif" for="emailVerif">Confirmez votre mail&nbsp;:
+<input required value="" id="emailVerif" type="email" placeholder="Confirmez votre e-mail" >
+</label>
 
-<label for="">Code postal&nbsp;:</label>
-<input type="text" placeholder="4218">
+<label class="promoSend" for="promoSend">En cochant cette case, j'accepte de recevoir les offres promotionnelles de Sebio.
+<input id="promoSend" type="checkbox">
+</label>
 
-<label for="">ville&nbsp;:</label>
-<input type="text" placeholder="Couthuin">
+<h4> Votre civilité</h4>
+<ul class="listOpt">
+    <li><label class="M" for="M">M.</label><input name="civi" id="M" type="radio"></li>
+    <li><label class="Mlle" for="Mlle">Mlle.</label><input name="civi" id="Mlle" type="radio"></li>
+    <li><label class="Mme" for="Mme">Mme</label><input name="civi" id="Mme" type="radio"></li>
+</ul>
 
-<label for="">Numéro de contact&nbsp;:</label>
-<input type="text" placeholder="0478745975">
+<label class="surname" for="surname">Votre prénom&nbsp;:
+<input required value="" id="surname" type="text" placeholder="Jhon">
+</label>
 
-<label for="">votre mot de passe&nbsp;:</label>
-<input type="text" placeholder="votremdp">
+<label class="name" for="name">Votre nom&nbsp;:
+<input required value="" id="name" type="text" placeholder="Doe">
+</label>
 
-<label for="">Confirmez votre mot de passe</label>
-<input type="text" placeholder="répéter votre mdp">
+<label class="adress" for="adress">Votre adresse&nbsp;:
+<input required value="" id="adress" type="text" placeholder="5, Rue martin-Jacques">
+</label>
 
-<input class="sendBtn" type="button" value="valider">
+<label class="postal" for="Postal">Code postal&nbsp;:
+<input required value="" id="Postal" type="text" placeholder="4218">
+</label>
+
+<label class="town" for="town">ville&nbsp;:
+<input required value="" id="town" type="text" placeholder="Couthuin">
+</label>
+
+<label class="nCont" for="Ncont">Numéro de contact&nbsp;:
+<input required value="" id="Ncont" type="text" placeholder="0478745975">
+</label>
+
+<label class="Mdp" for="Mdp">votre mot de passe&nbsp;:
+<input required value="" id="Mdp" type="text" placeholder="votremdp">
+</label>
+
+<label class="mdpConfirm" for="MdpConfirm">Confirmez votre mot de passe
+<input required value="" id="MdpConfirm" type="text" placeholder="répéter votre mdp">
+</label>
+
+<input class="sendBtn" type="submit" value="valider">
+
+</fieldset>
 </form>
 
 </div>
@@ -317,13 +340,14 @@
 <div class="globalwrap">
 <section class="siteMap">
     <h1>Plan du site</h1>
-<nav class="altnav">
-    <ul>
-            <li class="alistTitle"><h3><a href="">Mamans et enfants</a></h3>
+<nav class="altNav">    
+<h1 class="hiddenTitle">Menu de navigation</h1>
+    <ul class="mainNav">
+            <li class="listTitle"><a class="listInt" href="">Mamans et enfants</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Grossesse et allaitement</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Grossesse et allaitement</a>
                         <ul>
-                            <li><h5 class="alistSsubTitle"><a href="">Beauté et soins</a></h5>
+                            <li><a href="">Beauté et soins</a>
                                 <ul>
                                     <li><a href="">Complément alimentaires</a></li>
                                     <li><a href="">Relaxation et soins du corps</a></li>
@@ -331,28 +355,31 @@
                                     <li><a href="">Accouchement serein</a></li>
                                     <li><a href="">Livres</a></li>
                                 </ul>
-                            </li>
-                            <li><h5 class="alistSsubTitle"><a href="">Allaitement</a></h5>
+                            
                                 <ul>
                                     <li><a href="">Soins du mamelon</a></li>
                                     <li><a href="">Accessoires et compléments alimentaires</a></li>
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-                    <li><h4 class="alistSubTitle"><a href="">Listes de naissance</a></h4></li>
-                    <li><h4 class="alistSubTitle"><a href="">bébés et enfants</a></h4>
+                        </li>
+                    
+
+                    
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">bébés et enfants</a>
                         <ul>
                             <li><a href="">La toilette</a></li>
                             <li><a href="">Bien-être et santé</a></li>
                             <li><a href="">Autour du sommeil</a></li>
                             <li><a href="">Biberons et sucettes</a></li>
                             <li><a href="">Produits solaire</a></li>
+                            <li class="listSubTitle"><a class="menuSecTitle" href="">Location de porte bébés</a></li>
+                            <li class="listSubTitle"><a class="menuSecTitle" href="">Listes de naissance</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">couches  culottes et maillots</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">couches  culottes et maillots</a>
                         <ul>
-                            <li><h5 class="alistSsubTitle"><a href="">Couches</a></h5>
+                            <li><a href="">Couches</a>
                                 <ul>
                                     <li><a href="">Lavable</a></li>
                                     <li><a href="">Couches classiques</a></li>
@@ -360,7 +387,7 @@
                                     <li><a href="">Doublure et inserts</a></li>
                                 </ul>
                             </li>
-                            <li><h5 class="alistSsubTitle"><a href="">Culottes</a></h5>
+                            <li><a href="">Culottes</a>
                                 <ul>
                                     <li><a href="">Culottes de protection</a></li>
                                 </ul>
@@ -368,10 +395,10 @@
                                     <li><a href="">Culottes d'apprentissage</a></li>
                                 </ul>
                             </li>
-                            <li><h5 class="alistSsubTitle"><a href="">Maillots</a></h5></li>
+                            <li><a href="">Maillots</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Alimentation bio pour bébés</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Alimentation bio pour bébés</a>
                         <ul>
                             <li><a href="">Laits infantiles</a></li>
                             <li><a href="">Céréales</a></li>
@@ -381,7 +408,7 @@
                             <li><a href="">Boissons, accessoires et ustensiles</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">jeux et jouets</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">jeux et jouets</a>
                         <ul>
                             <li><a href="">Jeux de société</a></li>
                             <li><a href="">Puzzles et jeux de logique</a></li>
@@ -390,12 +417,12 @@
                             <li><a href="">Activité manuelles</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Location de porte bébés</a></h4></li>
+
                 </ul>
             </li>
-            <li class="alistTitle"><h3 ><a href="">Santé et nature</a></h3>
+            <li class="listTitle"><a class="listInt" href="">Santé et nature</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Santé et bien être</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Santé et bien être</a>
                         <ul>
                             <li><a href="">Complément alimentaires</a></li>
                             <li><a href="">Spécial hiver</a></li>
@@ -406,7 +433,7 @@
                             <li><a href="">Bijoux bienfaisants</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Hygiène et soin</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Hygiène et soin</a>
                         <ul>
                             <li><a href="">Déodorant</a></li>
                             <li><a href="">Savon et gel douche</a></li>
@@ -422,7 +449,7 @@
                             <li><a href="">Eaux de toilette</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Aromathérapie</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Aromathérapie</a>
                         <ul>
                             <li><a href="">Huiles essentielles</a></li>
                             <li><a href="">Huiles végétales</a></li>
@@ -434,14 +461,14 @@
                             <li><a href="">Cosmétiques</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Nos ateliers nature</a></h4></li>
-                    <li><h4 class="alistSubTitle"><a href="">fleurs de Bach</a></h4></li>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Nos ateliers nature</a></li>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">fleurs de Bach</a></li>
                 </ul>
             </li>
            
-            <li class="alistTitle"><h3><a href="">Maison et loisir</a></h3>
+            <li class="listTitle"><a class="listInt" href="">Maison et loisir</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Papeterie</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Papeterie</a>
                         <ul>
                             <li><a href="">Papier</a></li>
                             <li><a href="">Classer</a></li>
@@ -452,14 +479,14 @@
                             <li><a href="">Cahiers et calendriers</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Livres</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Livres</a>
                         <ul>
                             <li><a href="">Adultes</a></li>
                             <li><a href="">Enfants</a></li>
                             <li><a href="">Exercices</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">La maison au naturel</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">La maison au naturel</a>
                         <ul>
                             <li><a href="">Linge de bain</a></li>
                             <li><a href="">Articles de cuisine</a></li>
@@ -473,7 +500,7 @@
                             <li><a href="">Le jardin au naturel</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Produits d'entretien</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Produits d'entretien</a>
                         <ul>
                             <li><a href="">Vaisselle</a></li>
                             <li><a href="">Sols et sanitaires</a></li>
@@ -486,36 +513,36 @@
                 </ul>
             </li>
 
-             <li class="alistTitle"><h3><a href="">Mode</a></h3>
+             <li class="listTitle"><a class="listInt" href="">Mode</a>
                 <ul class="dropDwn">
-                    <li><h4 class="alistSubTitle"><a href="">Vêtements</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Vêtements</a>
                         <ul>
                             <li><a href="">Hommes</a></li>
                             <li><a href="">Femmes</a></li>
                             <li><a href="">Enfants</a></li>
                         </ul>
                     </li>
-                    <li><h4 class="alistSubTitle"><a href="">Tissus</a></h4>
+                    <li class="listSubTitle"><a class="menuSecTitle" href="">Tissus</a>
                         <ul>
                             <li><a href="">Maille de coton biologique</a></li>
                             <li><a href="">Coton tissé biologique</a></li>
                             <li><a href="">Ouattes et molletons</a></li>
                             <li><a href="">Tissu bio imperméable</a></li>
                         </ul>
-                        <li><h3><a href="">Bons plans</a></h3>
-                <ul>
+                    </li>
+                   
+                </ul>
+            </li>
+            <li class="listTitle"><a class="listInt" href="">Bons plans</a>
+                <ul class="dropDwn">
                     <li><a href="">Nouveautés</a></li>
                     <li><a href="">Articles en liquidation</a></li>
                     <li><a href="">Chèque cadeaux</a></li>
                 </ul>
             </li>
-                    </li>
-                   
-                </ul>
-            </li>
-  
     </ul>
-    </nav>
+
+</nav>
 
 </section>
 

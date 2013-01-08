@@ -629,9 +629,9 @@ table {
     Less
    ========================================================================== */
 @bcgGrey: #F1F1F1;
- @green: #97C93C;
- @orange: #3E622D;
- .three-colscont(){
+@green: #97C93C;
+@orange: #3E622D;
+.three-colscont(){
 width: 22.9em;
 display: inline-block;
 margin-right: 1.875em;
@@ -665,11 +665,20 @@ vertical-align: top;
     width: 49%;
 }
 
-.connect, .cart{
+.connect{
+font-size: 1.3em;
+font-family: 'Amaranth',sans-serif;
+margin: 0;
+color: #3E622D;
+font-weight: normal;
+display: block;
+width: 9em;
+float: left;
+}
+.cart{
   margin: 0;
-    font-size: 1.3em;
-      font-family: 'Amaranth', sans-serif;
-
+  font-size: 1.3em;
+  font-family: 'Amaranth', sans-serif;
   margin: 0;
   color: @orange;
   font-weight: normal;
@@ -677,7 +686,7 @@ vertical-align: top;
 }
 
 #login, #basket{
-  display:inline-block;
+  display:inline;
     width: 248px;
       vertical-align: top;
 
@@ -694,10 +703,8 @@ img{
    ========================================================================== */
   
 .listTitle{
-  display:inline-block;
+  display:inline;
   text-align: center;
-  margin-top: 0.7em;
-
 
       .listInt{
         color: @green;
@@ -716,12 +723,6 @@ img{
       padding-top: 0.61em;
       color: white;
 }
-
-
-
-
-
-
 
 .listTitle:hover{ 
 
@@ -744,18 +745,23 @@ img{
 .listSubTitle{
 display: inline-block;
 width: 15.1em;
-vertical-align: top;
 font-size: 0.8em;
+width: 15.1em;
+        min-height: auto;
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        zoom: 1;
+        *display: inline;
+        _height: 250px;
 }
-
-
-
 
 .mainNav{
   background-color: White;
-  height:3.4em;
+height: 3em;
+padding-top: 1em;
+margin-top: 0em;
 }
-
 
 .dropDwn{
   position: absolute;
@@ -787,6 +793,7 @@ font-size: 0.8em;
 
 .full{
   background-color: white;
+  padding-bottom: 1.5em;
 }
 .contentwrap{
   margin: 1em 0 0 0;
@@ -865,8 +872,6 @@ border-radius: 5px;
   }
 }
 
-
-
 .tv img{
 display: block;
 margin: 0 auto;
@@ -880,7 +885,7 @@ border-radius: 5px;
 }
 
 .plusConsultes{
-  margin: 1.6em 0 0 0;
+  margin: 3em 0 0 0;
   height:390px;  
 }
 
@@ -916,7 +921,7 @@ margin-right:0px;
 }
 
 .nouveautes{
-  margin: 1.6em 0 0 0;
+  margin: 3em 0 0 0;
     height:390px;  
 }
 
@@ -986,6 +991,29 @@ list-style-type: none;
 
 .descr{
   font-size: 0.9em;
+}
+
+.price{
+  float: right;
+  margin-top: 1em;
+  font-weight: 700;
+}
+
+.rating{
+  float: left;
+  margin-top: 1em;
+}
+
+.productLinks{
+  clear: both;
+
+  .sendBtn{
+    font-size: 0.9em;
+    float:right;  
+    margin-top: 0.7em;
+  }
+
+
 }
 /* ==========================================================================
    Product Page
@@ -1119,6 +1147,125 @@ list-style-type: none;
    ========================================================================== */
 .subscribe{
   margin-left:1em;
+
+
+  fieldset{
+    background-image: url('../img/bcg.png');
+    background-repeat: repeat;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+
+  form{
+    margin: 0 auto;
+    width: 54em;
+
+  }
+
+  label{
+display: block;
+margin-bottom: 1.4em;
+  }
+
+
+  input[type="email"]{
+    border-radius: 10px;
+    width: 12em;
+    padding-left: 0.4em;
+    height: 1.5em;
+  }
+
+    input[type="text"]{
+    border-radius: 10px;
+    width: 10em;
+    padding-left: 0.4em;
+    height: 1.5em;
+  }
+
+  input{
+    display: inline;
+
+  }
+
+  h4{
+    margin: 0 0 0.5em 0;
+  }
+
+  legend{
+    font-size: 1.3em;
+font-family: 'Amaranth',sans-serif;
+margin: 0;
+color: @green;
+font-weight: normal;
+  }
+
+
+}
+
+.adress input{
+  width: 15em;
+  border-radius: 10px;
+  padding-left: 0.4em;
+  height: 1.5em;
+}
+
+.listOpt{
+
+  li{
+    display: inline;
+  }
+
+   label{
+  display: inline;
+}
+  input{
+    margin-right: 1.4em;
+  }
+}
+
+/* ==========================================================================
+   Cart
+   ========================================================================== */
+
+.cartDiv{
+  margin: 0 1em 0 1em;
+
+  table{
+    width: 100%;
+
+    th{
+      text-align: left;
+      font-family: 'Amaranth',sans-serif;
+      color:@green;
+      height: 2em;
+    }
+
+    .desi{
+      width: 47.5%
+    }
+
+    .dispo{
+      width: 16%;
+      text-align: center;
+    }
+
+    .px{
+      width: 12.8%;
+    }
+  }
+
+  .cartTotal p{
+    text-align: right;
+margin-right: 3.5em;
+color: @orange;
+font-family: 'Amaranth', sans-serif;
+font-weight: 700;
+
+    .totalPrice{
+      font-size: 2em;
+      color:@green;
+    }
+  }
 }
 /* ==========================================================================
    Media Queries
