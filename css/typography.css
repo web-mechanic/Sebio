@@ -1,0 +1,54 @@
+/* ==========================================================================
+    Less
+   ========================================================================== */
+h1 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.95em;
+  margin: 0;
+  color: #3e622d;
+  font-weight: 700;
+}
+h2 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.1em;
+  margin: 0.67em 0;
+  color: #f25334;
+  font-weight: 700;
+}
+h3 {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 1.29em;
+  margin: 1em 0;
+}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+  font-weight: normal;
+}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+  font-weight: normal;
+}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+  font-weight: normal;
+}
+.listInt {
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 400;
+}
+.itemTitle {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #3e622d;
+  font-weight: normal;
+}
+p {
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4em;
+}
