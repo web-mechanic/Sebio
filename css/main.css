@@ -1,4 +1,5 @@
 .globalwrap{width:1070px;margin:0 auto;}
+.lastStage{display:block;z-index:2;position:absolute;top:50%;right:28%;background-color:white;padding:2em;border:1px solid lightgrey;box-shadow:2px 2px 5px #888;width:45%;}
 a:focus{outline:thin dotted;}
 a:active,a:hover{outline:0;}
 a{text-decoration:none;color:#3e622d;}
@@ -45,6 +46,8 @@ h6{font-size:0.75em;margin:2.33em 0;font-weight:normal;}
 .listInt{font-family:'Amaranth',sans-serif;font-weight:400;}
 .itemTitle{font-family:'Droid Sans',sans-serif;font-weight:400;font-size:1em;color:#3e622d;font-weight:normal;}
 p{font-family:'Droid Sans',sans-serif;font-weight:400;font-size:1em;line-height:1.4em;}
+body{width:100%;*zoom:1;}body:before,body:after{content:"";display:table;}
+body:after{clear:both;}
 .hiddenTitle{display:none;}
 body{font-size:16px;line-height:1.4;background-image:url('../img/bcg.png');background-repeat:repeat;font-family:'Droid Sans',sans-serif;}
 .logo{width:50%;}
@@ -98,22 +101,25 @@ body{font-size:16px;line-height:1.4;background-image:url('../img/bcg.png');backg
 .rating{float:left;margin-top:1em;}
 .productLinks{clear:both;}.productLinks .sendBtn{font-size:0.9em;float:right;margin-top:0.7em;}
 .sbRight{float:right;margin:1em 1em 0 1em;width:23%;}
-.bpBar h1{text-align:center;margin:0.7em 0 0.7em 0;}
+.bpBar h1{margin:0.7em 0 0.7em 0;}
 .bpBar input{display:block;margin-bottom:2.8em;}
 .sendBtn{width:auto;margin-top:1em;padding:4px 8px 4px 8px;background:-moz-linear-gradient(top, #92e823 0%, #98c93c);background:-webkit-gradient(linear, left top, left bottom, from(#92e823), to(#98c93c));-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;border:2px dashed grey;-moz-box-shadow:0px 1px 3px rgba(0, 0, 0, 0.5),inset 0px 0px 1px rgba(255, 255, 255, 0.7);-webkit-box-shadow:0px 1px 3px rgba(0, 0, 0, 0.5),inset 0px 0px 1px rgba(255, 255, 255, 0.7);box-shadow:0px 1px 3px rgba(0, 0, 0, 0.5),inset 0px 0px 1px rgba(255, 255, 255, 0.7);text-shadow:0px -1px 0px rgba(0, 0, 0, 0.4),0px 1px 0px rgba(255, 255, 255, 0.3);background-color:#92e823;}.sendBtn:hover{background:-moz-linear-gradient(top, #92e823 0%, #98c93c);background:-webkit-gradient(linear, left top, left bottom, from(#92e823), to(#98c93c));background:-moz-linear-gradient(top, #f1f1f1 0%, #dbdbdb);background:-webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#dbdbdb));background-color:#92e823;}
 .addCart{margin:4.5em;}
-.payementOpt{text-align:center;}
+.payementOpt{margin-top:1em;}
 .dispo a{float:left;margin-right:1em;height:2.8em;}
+.otherProducts{margin-top:1.5em;text-align:center;background-color:white;padding-top:1em;padding-bottom:1em;}.otherProducts h1{text-align:left;margin-left:9%;}
+.otherProducts li{display:inline-block;width:17%;}
 .contentProduct{display:block;margin:0 0 0 1em;width:48.4em;}.contentProduct h2{margin:0;}
 .contentProduct a:hover{text-decoration:underline;}
 .contentImg{width:16.125em;float:left;}.contentImg img{height:auto;width:97%;margin-right:1em;}
 .contentFiche{margin-top:1.4em;float:right;width:32em;}
 .productPage .full{height:40em;}
 .dispo{text-align:left;}
-.subscribe{margin-left:1em;}.subscribe fieldset{background-image:url('../img/bcg.png');background-repeat:repeat;border-radius:10px;margin-bottom:1em;padding-left:1em;}
+.subscribe{margin-left:1em;}.subscribe fieldset{background-image:url('../img/bcg.png');background-repeat:repeat;border-radius:10px;margin-bottom:1em;padding-left:1em;padding-bottom:1em;}
 .subscribe form{margin:0 auto;width:54em;}
 .subscribe .listOpt{margin-bottom:1.4em;}
-.subscribe label{display:block;margin-bottom:1.4em;}
+.subscribe label{display:block;margin-bottom:0.4em;margin-top:1em;}
+.subscribe .logconfirm{display:block;}
 .subscribe input[type="email"]{border-radius:10px;width:12em;padding-left:0.4em;height:1.5em;}
 .subscribe input[type="text"]{border-radius:10px;width:10em;padding-left:0.4em;height:1.5em;}
 .subscribe input[type="password"]{border-radius:10px;width:10em;padding-left:0.4em;height:1.5em;}
@@ -133,4 +139,11 @@ tr{border-bottom:1px dotted lightgrey;}
 .cartTotal{margin-top:1em;height:5em;}.cartTotal a{margin-right:3.5em;float:right;}
 footer{margin-left:1.8em;margin-top:0.5em;margin-bottom:1.5em;}footer section{width:15.3em;display:inline-block;vertical-align:top;margin-right:1em;}footer section:last-child{margin-right:0;}
 footer p{margin:0;padding:0;height:1.4em;}footer p:first-of-type{height:auto;}
+.addr{display:inline;float:left;width:314px;margin:0 8px;}
+.choixLivraison{display:inline;float:left;width:314px;margin:0 8px;}
+.payement{display:inline;float:left;width:314px;margin:0 8px;}
+.isOk{clear:both;margin-top:12em;}
+.isOk p{margin-bottom:1em;}
+.etape .cartTable{width:100%;}
+.accordion{background-color:white;padding:1em 1em 2em 1em;}
 @media only screen and (max-width:959px){}@media only screen and (max-width:768px) and (max-width:959px){.mainNav{margin-top:1em;} .full{width:90%;margin:0 auto;} .globalwrap{width:90%;} .content{width:100%;} .sbLeft{display:none;} .logBask{width:60%;} .topVentes,.plusConsultes,.nouveautes{height:100%;} .tv,.pc,.nv{margin:0em 12px 0 0;width:161px;}.tv img,.pc img,.nv img{width:95%;height:auto;} footer section{width:12.45em;} .goHome{display:none;} .subscribe{margin:0;}.subscribe form{width:100%;} .listTitle .listInt{color:#97c93c;text-decoration:none;margin:0;font-size:1em;height:75%;padding:0.4em 1em 1.4em 1em;} .listInt:hover{background-color:white;color:green;} .listSubTitle{font-size:0.8em;width:9.5em;} .dropDwn{right:2.4em;} .listTitle:hover .dropDwn,.listTitle:active .dropDwn{width:90%;margin-top:0.8em;} .listTitle:hover .second,.listTitle:active .second{right:2.4em;} .listTitle:hover .third,.listTitle:active .third{right:2.4em;width:42%;} .listTitle:hover .fourth,.listTitle:active .fourth{right:2.7em;width:22%;}}@media only screen and (min-width:480px) and (max-width:767px){}@media only screen and (max-width:479px){}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important;} a,a:visited{text-decoration:underline;} a[href]:after{content:" (" attr(href) ")";} abbr[title]:after{content:" (" attr(title) ")";} .ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:"";} pre,blockquote{border:1px solid #999;page-break-inside:avoid;} thead{display:table-header-group;} tr,img{page-break-inside:avoid;} img{max-width:100% !important;} @page {margin:0.5cm;}p,h2,h3{orphans:3;widows:3;} h2,h3{page-break-after:avoid;}}

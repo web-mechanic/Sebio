@@ -1,16 +1,26 @@
+(function ($) {
+    'use strict';
+//---global vars
 
- $(function() {
-    $( "#accordion" )
-      .accordion({
-        header: "h2"
-      })
-      .sortable({
-        axis: "y",
-        handle: "h3",
-        stop: function( event, ui ) {
-          // IE doesn't register the blur when sorting
-          // so trigger focusout handlers to remove .ui-state-focus
-          ui.item.children( "h3" ).triggerHandler( "focusout" );
-        }
-      });
-  });
+// --- methods
+var initialize = function(){
+ $('.lastStage').hide();
+ $('#commandcConfirm').on('click',yes);
+ popup();
+
+};
+
+var popup = function(e){
+$('#commandcConfirm').on('click',yes);
+};
+
+var yes = function(){
+$('.lastStage').show();
+};
+
+
+	$( function () {
+	// --- onload routines
+initialize();
+	});
+}(jQuery));

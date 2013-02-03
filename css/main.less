@@ -4,6 +4,19 @@
   margin: 0 auto;
 }
 
+.lastStage{
+  display: block;
+z-index: 2;
+position: absolute;
+top: 50%;
+right: 28%;
+background-color: white;
+padding: 2em;
+border: 1px solid lightgrey;
+box-shadow: 2px 2px 5px #888;
+width: 45%;
+}
+
 /* ==========================================================================
    Links
    ========================================================================== */
@@ -43,6 +56,7 @@ a{
 
 @import "reset";
 @import "typography";
+@import "grid";
 
 
    /* ==========================================================================
@@ -486,7 +500,6 @@ list-style-type: none;
 
 .bpBar{
   h1{
-    text-align: center;
     margin: 0.7em 0 0.7em 0;
   }
 
@@ -563,13 +576,32 @@ list-style-type: none;
 }
 
 .payementOpt{
-  text-align: center;
+margin-top: 1em;
 }
 
 .dispo a{
   float: left;
   margin-right: 1em;
   height: 2.8em;
+}
+
+.otherProducts{
+margin-top: 1.5em;
+text-align: center;
+background-color: white;
+padding-top: 1em;
+padding-bottom: 1em;
+
+  h1{
+    text-align: left;
+margin-left: 9%;
+  }
+
+
+  li{
+    display: inline-block;
+    width: 17%;
+  }
 }
 
 
@@ -628,6 +660,8 @@ list-style-type: none;
     border-radius: 10px;
     margin-bottom: 1em;
     padding-left: 1em;
+    padding-bottom: 1em;
+
   }
 
   form{
@@ -642,7 +676,12 @@ list-style-type: none;
 
   label{
 display: block;
-margin-bottom: 1.4em;
+margin-bottom: 0.4em;
+margin-top: 1em;
+  }
+
+  .logconfirm{
+    display: block;
   }
 
 
@@ -794,6 +833,35 @@ footer{
       }
     }
 
+}
+
+.addr{
+  .column(5);
+}
+
+.choixLivraison{
+    .column(5);
+}
+
+.payement{
+  .column(5);
+}
+.isOk{
+  clear:both;
+  margin-top: 12em;
+}
+
+.isOk p{
+  margin-bottom: 1em;
+}
+
+.etape .cartTable{
+  width: 100%
+}
+
+.accordion{
+  background-color: white;
+padding: 1em 1em 2em 1em;
 }
 /* ==========================================================================
    Media Queries
